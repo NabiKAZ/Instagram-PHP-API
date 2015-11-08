@@ -260,19 +260,7 @@ class Instagram
 
         return $this->_makeCall('users/' . $id . '/followed-by', true, $params);
     }
-    
-    /**
-     * Get the list of users that send follow request to this user.
-     *
-     * @param int $limit Limit of returned results
-     *
-     * @return mixed
-     */
-    public function getUserRequested()
-    {
-        return $this->_makeCall('users/self/requested-by', true);
-    }
-    
+
     /**
      * Get information about a relationship to another user.
      *
